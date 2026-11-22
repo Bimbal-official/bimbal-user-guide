@@ -1,0 +1,9 @@
+project = "Bimbal User Guide"
+author = "Bimbal"
+language = "en"
+root_doc = "index"
+exclude_patterns = ["_footer.rst"]
+locale_dirs = ["locale/"]
+gettext_compact = False
+html_show_copyright = False
+html_show_sphinx = False
