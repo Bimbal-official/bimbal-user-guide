@@ -1,0 +1,5 @@
+/scripts
+/.idea
+!/.idea/runConfigurations
+**/__pycache__/
+**/.DS_Store
