@@ -140,11 +140,15 @@ with an asterisk (*) are required.
          of measure, quantity, and unit price.
 
 Check the :guilabel:`Header Row #` and :guilabel:`Last Row #`, then click
-:guilabel:`Confirm`.
+:guilabel:`Confirm`. If the content of a column does not match its mapping, for
+example text in a :guilabel:`Quantity` column, Bimbal shows a warning: click
+:guilabel:`Go Back` to correct the mapping, or :guilabel:`Confirm Anyway`.
 
 .. tip::
-   :guilabel:`Re-run auto-detection` proposes a mapping from the column titles
-   listed in the :guilabel:`Column Header Mapping` table.
+   The column titles of a confirmed mapping are added to the
+   :guilabel:`Column Header Mapping` table. The next Bid Forms in the same
+   language are then mapped automatically. :guilabel:`Re-run auto-detection`
+   applies this table again.
 
 Review the lines
 ----------------
@@ -152,6 +156,17 @@ Review the lines
 The :guilabel:`Lines` tab lists every line read from the file, with its detected
 type: section, product, or note, and its parent line. Correct a line directly in
 the list if needed. Clear :guilabel:`Include In Import` to leave a line out.
+:guilabel:`Detect Hierarchy` detects the types and parent lines again.
+
+The :guilabel:`Extra Info` tab holds the settings of this Bid Form only:
+
+- :guilabel:`Language`: the language of the issuer's labels, used to recognize
+  them with the mapping tables;
+- the default product category, unit of measure, analytic account, and
+  invoicing policy of the products created by the import, which come from the
+  default values of the company;
+- :guilabel:`Merge line number into name`: adds the original line number to
+  the name of each imported line.
 
 A checklist shows what remains to be done before the import. Click
 :guilabel:`Confirm Review` once the lines are correct.
@@ -233,5 +248,11 @@ Form. Its :guilabel:`Companion File` summarizes the export.
 .. image:: invitations_to_bid/bid-forms-received-and-sent.png
    :alt: Bid Forms received from the issuer and sent back, in an Invitation
          to Bid.
+
+.. toctree::
+   :titlesonly:
+
+   invitations_to_bid/corrected_bid_forms
+   invitations_to_bid/follow_invitations_to_bid
 
 .. include:: ../../../_footer.rst
